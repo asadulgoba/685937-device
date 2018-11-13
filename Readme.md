@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Ravil Galimyanov](https://up.htmlacademy.ru/htmlcss/23/user/685937).
-* Наставник: `Неизвестно`.
+* Наставник: [Jevgeni Bogatyrjov](https://htmlacademy.ru/profile/id922827).
 
 ---
 
