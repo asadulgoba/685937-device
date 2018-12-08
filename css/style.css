@@ -1,0 +1,345 @@
+@font-face {
+  font-family: "Gilroy";
+  src : url("../fonts/gilroyextrabold.woff2") format("woff2"),
+        url("../fonts/gilroyextrabold.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src : url("../fonts/gilroylight.woff2") format("woff2"),
+        url("../fonts/gilroylight.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src : url("../fonts/opensans.woff2") format("woff2"),
+        url("../fonts/opensans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src : url("../fonts/opensanslight.woff2") format("woff2"),
+        url("../fonts/opensanslight.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Gilroy";
+  font-size: 18px;
+  line-height: 1.333;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+}
+
+.modal, .visually-hidden { display: none; }
+
+a { text-decoration: none; }
+
+a:visited { color: rgb(0, 0, 0); }
+
+
+.main-navigaton {
+  background-color: #f7e296;
+  width: 1160px;
+
+}
+
+.site-navigation,
+.user-navigation,
+.site-navigation-footer,
+.user-navigation-footer,
+.footer-social-list
+ {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a,
+.footer-phone a {
+  color: rgb(0, 0, 0);
+}
+
+.main-search {
+  background-color: #f7e296;
+  border: none;
+  font-size: 15px;
+  font-family: "Open Sans";
+  font-weight: 100;
+  opacity: 0.302;
+  line-height: 2;
+  text-align: left;
+
+
+}
+
+.main-search:hover {
+  font-size: 15px;
+  font-family: "Open Sans";
+  font-weight: 100;
+  opacity: 0.6
+  line-height: 2;
+  text-align: left;
+
+}
+
+
+.main-search:focus {
+  font-size: 15px;
+  font-family: "Open Sans";
+  color: rgb(0, 0, 0);
+  line-height: 2;
+  text-align: left;
+  font-weight: 100;
+  outline: none;
+}
+
+input:hover::-webkit-input-placeholder {
+  opacity: 0.6;
+}
+
+.user-navigation {
+  font-size: 15px;
+  font-family: "Open Sans";
+  font-weight: 100;
+  line-height: 2;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+
+.login-link:hover,
+.compare:hover,
+.basket:hover,
+.catalog:hover,
+.delivery:hover,
+.warranty:hover,
+.contacts:hover,
+.main-header-logo:hover,
+.main-footer-logo:hover,
+.delivery-footer:hover,
+.warranty-footer:hover,
+.contacts-footer:hover,
+.catalog-item p:hover {
+  opacity: 0.6;
+}
+
+
+.login-link:active,
+.login-unlink,
+.login-unlink-footer,
+.compare:active,
+.basket:active,
+.catalog:active,
+.delivery:active,
+.warranty:active,
+.contacts:active,
+.main-header-logo:active,
+.main-footer-logo:active {
+  opacity: 0.3;
+}
+
+.catalog,
+.delivery,
+.warranty,
+.contacts,
+.delivery-footer,
+.warranty-footer,
+.contacts-footer {
+  letter-spacing: 0.2em;
+}
+
+.about-title,
+.contacts-title,
+.page-title {
+
+  font-size: 47px;
+  font-family: "Gilroy";
+  font-weight: bold;
+  line-height: 1.021;
+  text-align: left;
+  text-transform: none;
+
+}
+
+.breadcrumbs, .color, .bluetooth {
+  list-style: none;
+}
+
+.breadcrumbs li {
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-weight: 100;
+  line-height: 24px;
+  opacity: 0.3;
+  text-transform: none;
+}
+
+.breadcrumbs a:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs a:active {
+  opacity: 0.1;
+}
+
+.filters p  {
+  font-size: 18px;
+  font-family: "Gilroy";
+  font-weight: bold;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.color li, .bluetooth li {
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-weight: 100;
+  line-height: 40px;
+  text-transform: none;
+}
+
+.show {
+  font-size: 18px;
+  font-family: "Gilroy";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #f7e296;
+}
+
+
+
+
+
+
+.container p {
+  font-size: 15px;
+  font-family: "Open Sans";
+  color: rgb(70, 70, 70);
+  line-height: 30px;
+  text-align: left;
+  text-transform: none;
+}
+
+
+.delivery-companys li {
+  list-style-type: none;
+}
+
+.delivery-companys a:before {
+    color: rgb(70, 70, 70);
+    content: url(../img/slider-button.svg);
+    padding-right: 20px;
+    opacity: 0.2;
+   }
+
+.delivery-companys p {
+  font-size: 16px;
+  font-family: "Gilroy";
+  font-weight: bold;
+  line-height: 40px;
+  text-align: left;
+  color: color: rgb(0, 0, 0);
+}
+
+
+.about {
+  font-size: 18px;
+  font-family: "Gilroy";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #f7e296;
+}
+
+
+
+
+.main-footer {
+  background-color: #464646;
+  color: #ffffff;
+
+
+}
+
+.footer-address,
+.footer-phone,
+.footer-social,
+.footer-copyright {
+  font-size: 15px;
+  font-family: "Open Sans";
+  font-weight: 100;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  text-transform: none;
+}
+
+.footer-phone a {
+  color: rgb(255, 255, 255);
+}
+
+
+
+.site-navigation-footer a,
+.user-navigation-footer a {
+  color: #ffffff;
+}
+
+
+.user-navigation-footer {
+  font-size: 15px;
+  font-family: "Open Sans";
+  font-weight: 100;
+  line-height: 2;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+
+.login-link-footer,
+.compare-footer,
+.basket-footer
+{
+  opacity: 0.7;
+}
+
+
+.login-link-footer:hover,
+.compare-footer:hover,
+.basket-footer:hover
+
+{
+  opacity: 1.0;
+}
+
+.login-link-footer:active,
+.compare-footer:active,
+.basket-footer:active,
+.delivery-footer:active,
+.warranty-footer:active,
+.contacts-footer:active
+ {
+  opacity: 0.3;
+}
