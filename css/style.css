@@ -39,10 +39,10 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 18px;
-  line-height: 1.333;
-  font-weight: bold;
+  line-height: 24px;
+  font-weight: 900;
   color: rgb(0, 0, 0);
   text-transform: uppercase;
 }
@@ -50,7 +50,6 @@ body {
 .modal, .visually-hidden { display: none; }
 
 a { text-decoration: none; }
-
 a:visited { color: rgb(0, 0, 0); }
 
 
@@ -64,7 +63,8 @@ a:visited { color: rgb(0, 0, 0); }
 .user-navigation,
 .site-navigation-footer,
 .user-navigation-footer,
-.footer-social-list
+.footer-social-list,
+.catalog-list
  {
   list-style: none;
 }
@@ -79,20 +79,24 @@ a:visited { color: rgb(0, 0, 0); }
   background-color: #f7e296;
   border: none;
   font-size: 15px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 100;
-  opacity: 0.302;
-  line-height: 2;
+  opacity: 0.3;
+  line-height: 30px;
   text-align: left;
-
-
 }
 
-.main-search:hover {
+:active, :hover {
+    outline: 0;
+    outline-offset: 0;
+}
+
+
+.main-search:hover, .main-search:focus-within {
   font-size: 15px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 100;
-  opacity: 0.6
+  opacity: 0.6;
   line-height: 2;
   text-align: left;
 
@@ -101,7 +105,7 @@ a:visited { color: rgb(0, 0, 0); }
 
 .main-search:focus {
   font-size: 15px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", Arial, sans-serif;
   color: rgb(0, 0, 0);
   line-height: 2;
   text-align: left;
@@ -115,7 +119,7 @@ input:hover::-webkit-input-placeholder {
 
 .user-navigation {
   font-size: 15px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 100;
   line-height: 2;
   text-align: left;
@@ -123,19 +127,20 @@ input:hover::-webkit-input-placeholder {
 }
 
 
-.login-link:hover,
-.compare:hover,
-.basket:hover,
-.catalog:hover,
-.delivery:hover,
-.warranty:hover,
-.contacts:hover,
-.main-header-logo:hover,
-.main-footer-logo:hover,
-.delivery-footer:hover,
-.warranty-footer:hover,
-.contacts-footer:hover,
-.catalog-item p:hover {
+.login-link:hover,.login-link:focus-within,
+.compare:hover,.compare:focus-within,
+.basket:hover,.basket:focus-within,
+.catalog:hover,.catalog:focus-within,
+.delivery:hover,.delivery:focus-within,
+.delivery-company:hover,.delivery-company:focus-within,
+.warranty:hover,.warranty:focus-within,
+.contacts:hover,.contacts:focus-within,
+.main-header-logo:hover,.main-header-logo:focus-within,
+.main-footer-logo:hover,.main-footer-logo:focus-within,
+.delivery-footer:hover,.delivery-footer:focus-within,
+.warranty-footer:hover,.warranty-footer:focus-within,
+.contacts-footer:hover,.contacts-footer:focus-within,
+.catalog-item p:hover,.catalog-item p:focus-within {
   opacity: 0.6;
 }
 
@@ -147,11 +152,29 @@ input:hover::-webkit-input-placeholder {
 .basket:active,
 .catalog:active,
 .delivery:active,
+.delivery-company:active,
 .warranty:active,
 .contacts:active,
 .main-header-logo:active,
-.main-footer-logo:active {
+.main-footer-logo:active,
+.button-copyright:active
+{
   opacity: 0.3;
+}
+
+.breadcrumbs a:hover, .breadcrumbs a:focus-within,
+.social-button-facebook:hover, .social-button-facebook:focus-within,
+.social-button-instargam:hover, .social-button-instargam:focus-within,
+.social-button-twitter:hover, .social-button-twitter:focus-within,
+.button-copyright:hover, .button-copyright:focus-within {
+  opacity: 0.6;
+}
+
+.breadcrumbs a:active,
+.social-button-facebook:active,
+.social-button-instargam:active,
+.social-button-twitter:active {
+  opacity: 0.1;
 }
 
 .catalog,
@@ -169,7 +192,7 @@ input:hover::-webkit-input-placeholder {
 .page-title {
 
   font-size: 47px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Tahoma, sans-serif;
   font-weight: bold;
   line-height: 1.021;
   text-align: left;
@@ -183,32 +206,24 @@ input:hover::-webkit-input-placeholder {
 
 .breadcrumbs li {
   font-size: 14px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 100;
   line-height: 24px;
   opacity: 0.3;
   text-transform: none;
 }
 
-.breadcrumbs a:hover {
-  opacity: 0.6;
-}
-
-.breadcrumbs a:active {
-  opacity: 0.1;
-}
-
 .filters p  {
   font-size: 18px;
-  font-family: "Gilroy";
-  font-weight: bold;
+  font-family: "Gilroy", Tahoma, sans-serif;
+  font-weight: 900;
   line-height: 24px;
   text-transform: none;
 }
 
 .color li, .bluetooth li {
   font-size: 14px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 100;
   line-height: 40px;
   text-transform: none;
@@ -216,9 +231,9 @@ input:hover::-webkit-input-placeholder {
 
 .show {
   font-size: 18px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Tahoma, sans-serif;
   color: rgb(0, 0, 0);
-  font-weight: bold;
+  font-weight: 900;
   letter-spacing: 0.2em;
   line-height: 24px;
   text-align: center;
@@ -226,20 +241,30 @@ input:hover::-webkit-input-placeholder {
   background-color: #f7e296;
 }
 
-
-
-
-
-
 .container p {
   font-size: 15px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", Arial, sans-serif;
   color: rgb(70, 70, 70);
   line-height: 30px;
   text-align: left;
   text-transform: none;
 }
 
+.catalog-item h3  {
+  font-size: 18px;
+  font-family: "Gilroy", Tahoma, sans-serif;
+  font-weight: 900;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.catalog-item b  {
+  font-size: 16px;
+  font-family: "Gilroy", Tahoma, sans-serif;
+  font-weight: 100;
+  line-height: 24px;
+  text-transform: none;
+}
 
 .delivery-companys li {
   list-style-type: none;
@@ -254,19 +279,18 @@ input:hover::-webkit-input-placeholder {
 
 .delivery-companys p {
   font-size: 16px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Tahoma, sans-serif;
   font-weight: bold;
   line-height: 40px;
   text-align: left;
-  color: color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
-
 
 .about {
   font-size: 18px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Tahoma, sans-serif;
   color: rgb(0, 0, 0);
-  font-weight: bold;
+  font-weight: 900;
   letter-spacing: 0.2em;
   line-height: 24px;
   text-align: center;
@@ -274,14 +298,9 @@ input:hover::-webkit-input-placeholder {
   background-color: #f7e296;
 }
 
-
-
-
 .main-footer {
   background-color: #464646;
   color: #ffffff;
-
-
 }
 
 .footer-address,
@@ -289,7 +308,7 @@ input:hover::-webkit-input-placeholder {
 .footer-social,
 .footer-copyright {
   font-size: 15px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 100;
   color: rgb(255, 255, 255);
   text-align: left;
@@ -300,17 +319,14 @@ input:hover::-webkit-input-placeholder {
   color: rgb(255, 255, 255);
 }
 
-
-
 .site-navigation-footer a,
 .user-navigation-footer a {
   color: #ffffff;
 }
 
-
 .user-navigation-footer {
   font-size: 15px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 100;
   line-height: 2;
   text-align: left;
@@ -326,10 +342,9 @@ input:hover::-webkit-input-placeholder {
 }
 
 
-.login-link-footer:hover,
-.compare-footer:hover,
-.basket-footer:hover
-
+.login-link-footer:hover, .login-link-footer:focus-within,
+.compare-footer:hover, .compare-footer:focus-within,
+.basket-footer:hover, .basket-footer:focus-within
 {
   opacity: 1.0;
 }
@@ -343,3 +358,60 @@ input:hover::-webkit-input-placeholder {
  {
   opacity: 0.3;
 }
+
+.icon-search {
+  background-image: url(../img/search-icon.svg);
+  width: 16px;
+  height: 16px;
+}
+
+.icon-login-link {
+  background-image: url(../img/user-icon.svg);
+  width: 13px;
+  height: 12px;
+}
+
+.icon-compare {
+  background-image: url(../img/compare-icon.svg);
+  width: 10px;
+  height: 10px;
+}
+
+.icon-basket {
+  background-image: url(../img/cart-icon.svg);
+  width: 12px;
+  height: 12px;
+}
+
+.icon-catalog {
+  background-image: url(../img/plus-icon.png);
+  width: 16px;
+  height: 16px;
+  opacity: 0.3;
+}
+
+.social-button-facebook {
+  display: block;
+  background-image: url(../img/facebook-logo.svg);
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+
+.social-button-instargam {
+  display: block;
+  background-image: url(../img/instagram-logo.svg);
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+
+.social-button-twitter {
+  display: block;
+  background-image: url(../img/twiter-logo.svg);
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+
+
