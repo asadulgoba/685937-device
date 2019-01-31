@@ -25,14 +25,22 @@
         </ul>
       </div>
       <ul class="site-navigation">
-        <li class="catalog"><a href="">Каталог товаров</a><!-- <div class="icon-catalog"></div> -->
-          <ul class="modal displayed-hidden">
-            <a href="#"><li>Виртуальная реальность</li></a>
-            <a href="#"><li>Моноподы для селфи</li></a>
-            <a href="#"><li>Экшн-камеры</li></a>
-            <a href="#"><li>Фитнес-браслеты</li></a>
-            <a href="#"><li>Умные часы</li></a>
-            <a href="#"><li>Квадрокоптеры</li></a>
+        <li class="catalog">Каталог товаров
+          <input class="catalog-button" type="checkbox" id="catalog-button">
+          <label for="catalog-button" tabindex="0"></label>
+          <ul class="modal">
+                <div>
+                  <li><a href="#">Виртуальная реальность</a></li>
+                  <li><a href="#">Моноподы для селфи</a></li>
+                  <li><a href="#">Экшн-камеры</a></li>
+                </div>
+                <div>
+                  <li><a href="#">Фитнес-браслеты</a></li>
+                  <li><a href="#">Умные часы</a></li>
+                </div>
+                <div>
+                  <li><a href="#">Квадрокоптеры</a></li>
+                </div>
           </ul>
         </li>
         <li class="delivery"><a href="#">Доставка</a></li>
@@ -134,8 +142,9 @@
           </li>
           <li class="catalog-item">
             <a class="catalog-item-list" href="#">
-              <p>
+              <p class="new">
                 <img src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
+                <span>NEW</span>
               </p>
               <div>
                 <h3>Селфи-палка «Следуй за мной»</h3>

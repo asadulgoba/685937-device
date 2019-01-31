@@ -47,7 +47,7 @@ body {
   text-transform: uppercase;
 }
 
-.modal, .visually-hidden { display: none; }
+.visually-hidden { display: none; }
 
 a { text-decoration: none; }
 a:visited { color: rgb(0, 0, 0); }
@@ -118,7 +118,7 @@ input:focus:-ms-input-placeholder      {color:rgb(0, 0, 0); opacity: 1.0;}
 .login-link:hover,.login-link:focus-within,
 .compare:hover,.compare:focus-within,
 .basket:hover,.basket:focus-within,
-.catalog:hover,.catalog:focus-within,
+/*.catalog:hover,.catalog:focus-within,*/
 .delivery:hover,.delivery:focus-within,
 .delivery-company:hover,.delivery-company:focus-within,
 .warranty:hover,.warranty:focus-within,
@@ -138,7 +138,7 @@ input:focus:-ms-input-placeholder      {color:rgb(0, 0, 0); opacity: 1.0;}
 .login-unlink-footer,
 .compare:active,
 .basket:active,
-.catalog:active,
+/*.catalog:active,*/
 .delivery:active,
 .delivery-company:active,
 .warranty:active,
@@ -331,13 +331,14 @@ input:focus:-ms-input-placeholder      {color:rgb(0, 0, 0); opacity: 1.0;}
 }
 
 .user-navigation-footer {
+  display: flex;
   font-size: 15px;
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 100;
   line-height: 2;
   text-align: left;
   text-transform: capitalize;
-  display: flex;
+
 
 }
 
@@ -367,12 +368,10 @@ input:focus:-ms-input-placeholder      {color:rgb(0, 0, 0); opacity: 1.0;}
   opacity: 0.3;
 }
 
-.icon-catalog {
-  background-image: url(../img/plus-icon.png);
-  width: 16px;
-  height: 16px;
-  opacity: 0.3;
-}
+
+
+
+
 
 .social-button-facebook {
   display: block;
@@ -533,6 +532,92 @@ input:focus:-ms-input-placeholder      {color:rgb(0, 0, 0); opacity: 1.0;}
   /*outline: #cacd58 solid 2px;*/
 }
 
+.catalog label {
+  display: inline-block;
+  /*position: absolute;*/
+  content: "";
+  background-color: #f7e296;
+  background-image: url(../img/plus-icon.png);
+  width: 16px;
+  height: 16px;
+  border: none;
+  opacity: 0.3;
+  top: 120px;
+  left: 150px;
+  margin: 0;
+  margin-left: 5px;
+
+  /*vertical-align: center;*/
+}
+
+.catalog label:hover {
+  opacity: 0.6;
+
+}
+
+
+.catalog input[type="checkbox"] {
+  display: none;
+  /*content: "";
+  background-color: #f7e296;
+  background-image: url(../img/plus-icon.png);
+  width: 16px;
+  height: 16px;
+  border: none;
+  opacity: 0.3;*/
+}
+
+
+.modal {
+  display: none;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: #f7e296;
+  width: 1160px;
+  margin-left: -60px;
+  margin-top: 18px;
+  padding-bottom: 40px;
+}
+
+.catalog input[type="checkbox"]:checked ~ ul.modal {
+  display: block;
+}
+
+.modal li:hover, .modal li:focus-within {
+  opacity: 0.6;
+}
+
+.modal li:active {
+  opacity: 0.3;
+}
+
+.modal li {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+
+.modal div {
+  display: inline-block;
+  vertical-align: top;
+  /*width: 300px;*/
+  /*outline: #cacd58 solid 2px;*/
+  /*display: flex;*/
+  /*flex-wrap: wrap;*/
+  /*padding-bottom: 20px;*/
+
+}
+
+
 .delivery {
   position: relative;
   left: 165px;
@@ -672,7 +757,6 @@ input:focus:-ms-input-placeholder      {color:rgb(0, 0, 0); opacity: 1.0;}
   display: flex;
   flex-basis: 140px;
   justify-content: space-around;
-
   padding: 0;
 
 }
@@ -798,15 +882,15 @@ input:focus:-ms-input-placeholder      {color:rgb(0, 0, 0); opacity: 1.0;}
   /*outline: #cacd58 solid 1px;*/
 }
 
-input[type="checkbox"] {
+.color input[type="checkbox"] {
   display: none;
 }
 
-input[type="checkbox"] + label {
+.color input[type="checkbox"] + label {
   /*outline: #cacd58 solid 1px;*/
 }
 
-input[type="checkbox"] + label:before {
+.color input[type="checkbox"] + label:before {
   content: "";
   background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
@@ -818,7 +902,7 @@ input[type="checkbox"] + label:before {
   /*outline: #cacd58 solid 1px;*/
 }
 
-input[type="checkbox"]:checked + label:before {
+.color input[type="checkbox"]:checked + label:before {
   background-image: url(../img/checkbox-on.svg);
 }
 
@@ -965,3 +1049,20 @@ input[type="radio"]:checked + label:before {
   /*outline: #cacd58 solid 2px;*/
   align-self: center;
 }
+
+.new {
+  position: relative;
+
+}
+
+.new span {
+  position: absolute;
+  top: 29px;
+  right: 26px;
+  padding: 23px 15px;
+  border: 2px solid black;
+  border-radius: 50%;
+  opacity: .2;
+} ;
+
+
